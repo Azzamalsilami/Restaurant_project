@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class main{
 
 
@@ -11,7 +12,18 @@ public class main{
 
 
     public static void main(String[] args) {
-        System.out.println("Hi");
-        System.out.println("Hi from Azzam");
+
+      Scanner scnr = new Scanner(System.in);
+
+      customer cus = new customer();
+  
+      System.out.println("Name of customer");
+      cus.setName(scnr.nextLine());
+
+      System.out.println("Number phone of customer");
+      cus.setNumOfcusm(scnr.nextInt());
+
+      cus.WriteOutput();
+
       }
 }
