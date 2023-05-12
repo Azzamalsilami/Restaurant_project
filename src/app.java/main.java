@@ -1,7 +1,11 @@
+import java.util.Arrays;
 import java.util.Scanner;
 public class main{
 
-
+/* menu  order1 = new menu();
+ * order1.setFood()
+ * 
+ */
 
 
 
@@ -24,6 +28,12 @@ public class main{
       cus.setNumOfcusm(scnr.nextInt());
 
       cus.WriteOutput();
+      
+      
+      
+      menu  order1 = new menu();
 
+      order1.printarreyfood(Food);
+      order1.printarreydrinks(Drinks);
       }
 }
