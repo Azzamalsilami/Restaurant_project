@@ -2,11 +2,6 @@ import java.util.Arrays;
 import java.util.Scanner;
 public class main{
 
-/* menu  order1 = new menu();
- * order1.setFood()
- * 
- */
-
 
 
 
@@ -32,8 +27,16 @@ public class main{
       
       
       menu  order1 = new menu();
+      order1.setFood();
+      order1.setDrinks();
+      
+      System.out.println("     ||Food Menu||"+"\n");
+      
+      order1.printarreyfood();
+      System.out.println("     ||Drinks Menu||"+"\n");
 
-      order1.printarreyfood(Food);
-      order1.printarreydrinks(Drinks);
-      }
+      order1.printarreydrinks();
+   
+}
+
 }

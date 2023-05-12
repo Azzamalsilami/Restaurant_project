@@ -1,47 +1,47 @@
 import java.util.Arrays;
 public class menu {
-private  String [] Food = new String[7];
+  private  String [] Food = new String[7];
  private String [] Drinks  = new String[4];
  private int Prices;
 
 public menu() {
 
 }
-public void printarreydrinks(int[]drunkii){
+public void printarreydrinks(){
   for(int i = 0; i<Drinks.length;i++){
-System.out.println(Drinks[i]);
+    System.out.println(Drinks[i]+"\n");
 
 }
 }
 
-public void printarreyfood(int[]foody){
+public void printarreyfood(){
   for(int i = 0; i<Food.length;i++){
-System.out.println(Food[i]);
+System.out.println(Food[i]+"\n");
   
-
+ 
   }
   
 }
-public void setFood(String F) {
+public void setFood() {
 
   
-  Food[0] = "Pizza";
-    Food[1] = "Meat Burger";
-    Food[2] = "Chicken Burger";
-    Food[3] = "Spaghetti";
-    Food[4] = "Nuggets";
-    Food[5] = "Steak";
-    Food[6] = "Salad";
+  Food[0] = "1- Pizza           |30 SR|";
+  Food[1] = "2- Meat Burger     |15 SR|";
+  Food[2] = "3- Chicken Burger  |15 SR|";
+  Food[3] = "4- Spaghetti       |20 SR|";
+  Food[4] = "5- Nuggets         |7 SR|";
+  Food[5] = "6- Steak           |25 SR|";
+  Food[6] = "7- Salad           |5 SR|";
   
 
     
 }
-public void setDrinks(String D){
+public void setDrinks(){
  
-  Drinks[0] = "Water";
-    Drinks[1] = "Seven Up";
-    Drinks[2] = "Pepsi";
-    Drinks[3] = "Orange Juice";
+  Drinks[0] = "1- Water       |1 SR|";
+  Drinks[1] = "2- Seven Up    |3 SR|";
+  Drinks[2] = "3- Pepsi       |3 SR|";
+  Drinks[3] = "4- Orange Juice|5 SR|";
 
   
      }
