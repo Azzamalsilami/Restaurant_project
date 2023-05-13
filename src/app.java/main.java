@@ -36,6 +36,11 @@ public class main{
       System.out.println("     ||Drinks Menu||"+"\n");
 
       order1.printarreydrinks();
+
+
+      order ord = new order(null, null, 0);
+
+      bill payBill = new bill(null, null, 0);
    
 }
 
