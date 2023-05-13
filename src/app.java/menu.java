@@ -1,10 +1,13 @@
 import java.util.Arrays;
 public class menu {
-  private  String [] Food = new String[7];
+ private  String [] Food = new String[7];
  private String [] Drinks  = new String[4];
  private int Prices;
 
-public menu() {
+public menu(String f, String d, int p) {
+  Food[0] = "null";
+  Drinks[0] = "null";
+  Prices = 0;
 
 }
 public void printarreydrinks(){
@@ -29,9 +32,9 @@ public void setFood() {
   Food[1] = "2- Meat Burger     |15 SR|";
   Food[2] = "3- Chicken Burger  |15 SR|";
   Food[3] = "4- Spaghetti       |20 SR|";
-  Food[4] = "5- Nuggets         |7 SR|";
+  Food[4] = "5- Nuggets         |7  SR|";
   Food[5] = "6- Steak           |25 SR|";
-  Food[6] = "7- Salad           |5 SR|";
+  Food[6] = "7- Salad           |5  SR|";
   
 
     

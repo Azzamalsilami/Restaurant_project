@@ -26,7 +26,7 @@ public class main{
       
       
       
-      menu  order1 = new menu();
+      menu  order1 = new menu(null, null, 0);
       order1.setFood();
       order1.setDrinks();
       
