@@ -1,54 +1,80 @@
-import java.util.Arrays;
+import java.util.ArrayList;
 public class menu {
- private  String [] Food = new String[7];
- private String [] Drinks  = new String[4];
+ // private  String [] Food = new String[7];
+ // private String [] Drinks  = new String[4];
  private int Prices;
+ private ArrayList<String> Food = new ArrayList<String>(10);
+ private ArrayList<String> Drinks = new ArrayList<String>(10);
 
-public menu(String f, String d, int p) {
-  Food[0] = "null";
-  Drinks[0] = "null";
+public menu() {
+  //Food.add(null);
+  //Drinks.add(null);
   Prices = 0;
 
 }
-public void printarreydrinks(){
+/*public void printarreydrinks(){
   for(int i = 0; i<Drinks.length;i++){
     System.out.println(Drinks[i]+"\n");
 
 }
-}
+}*/
 
-public void printarreyfood(){
-  for(int i = 0; i<Food.length;i++){
-System.out.println(Food[i]+"\n");
-  
- 
-  }
-  
-}
+
+
 public void setFood() {
 
-  
-  Food[0] = "1- Pizza           |30 SR|";
+  /* Food[0] = "1- Pizza           |30 SR|";
   Food[1] = "2- Meat Burger     |15 SR|";
   Food[2] = "3- Chicken Burger  |15 SR|";
   Food[3] = "4- Spaghetti       |20 SR|";
   Food[4] = "5- Nuggets         |7  SR|";
   Food[5] = "6- Steak           |25 SR|";
-  Food[6] = "7- Salad           |5  SR|";
-  
+  Food[6] = "7- Salad           |5  SR|";*/
 
+  Food.add("Pizza 30 SR");
+  Food.add("Meat Burger 15 SR");
+  Food.add("Chicken Burger 15 SR");
+  Food.add("Spaghetti 20 SR");
+  Food.add("Nuggets 7  SR");
+  Food.add("Steak 25 SR");
+  Food.add("Salad 5  SR");
+  
+  System.out.println(Food +"\n");
+  
     
 }
 public void setDrinks(){
  
-  Drinks[0] = "1- Water       |1 SR|";
+ /*  Drinks[0] = "1- Water       |1 SR|";
   Drinks[1] = "2- Seven Up    |3 SR|";
   Drinks[2] = "3- Pepsi       |3 SR|";
-  Drinks[3] = "4- Orange Juice|5 SR|";
+  Drinks[3] = "4- Orange Juice|5 SR|";*/
+
+  Drinks.add("Water 1 SR");
+  Drinks.add("Seven Up 3 SR");
+  Drinks.add("Pepsi 3 SR");
+  Drinks.add("Orange Juice 5 SR");
+
+  System.out.println(Drinks);
+
 
   
      }
-     public void setprices(){
+
+     public void printOut(){
+      /*for(int i = 0; i<Food.length;i++){
+      System.out.println(Food[i]+"\n");
+      }*/
+      
+      System.out.println("     ||Food Menu||"+"\n");
+      setFood();
+      System.out.println("     ||Drinks Menu||"+"\n");
+      setDrinks();
+      
+    }
+
+
+     /* public void setprices(){
      
       for(int i =0; i<Drinks.length; i++){
           if(Drinks[i]=="Water" ) {
@@ -109,7 +135,7 @@ public void setDrinks(){
          
        }
     
-      }
+      } */
       
     }    
 

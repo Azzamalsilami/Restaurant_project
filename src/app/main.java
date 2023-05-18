@@ -22,25 +22,22 @@ public class main{
       System.out.println("Number phone of customer");
       cus.setNumOfcusm(scnr.nextInt());
 
-      cus.WriteOutput();
       
       
+      /********************************************************* */
       
-      menu  order1 = new menu(null, null, 0);
-      order1.setFood();
-      order1.setDrinks();
+      menu  menu = new menu();
       
-      System.out.println("     ||Food Menu||"+"\n");
+    
+      menu.printOut();
       
-      order1.printarreyfood();
-      System.out.println("     ||Drinks Menu||"+"\n");
 
-      order1.printarreydrinks();
+      /******************************************************* */
 
 
-      order ord = new order(null, null, 0);
+      order ord = new order();
 
-      bill payBill = new bill(null, null, 0);
+      bill payBill = new bill();
    
 }
 

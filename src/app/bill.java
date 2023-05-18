@@ -1,7 +1,7 @@
 public class bill extends order {
 
-    public bill(String f, String d, int p) {
-        super(f, d, p);
+    public bill() {
+        super();
         //TODO Auto-generated constructor stub
     }
 
