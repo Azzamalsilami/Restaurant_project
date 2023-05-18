@@ -4,7 +4,7 @@
 # Project Description
 
 
-The idea of the project is to manage a restaurant system and it is divided into three sections. The first is to give the customer three options. He chooses whether he would like the food to be takeaway or a reservation with the number of people at the table, or the order will be delivery. The second section will be the food and beverage menu, and the third section will be the invoice.
+The program is a display of the restaurant menu, and the user chooses from it plus if it is a reservation or not, and it determines the number of people, the time, and the last stage. The invoice is printed with the time date and order information
 
 
 # members of groub
