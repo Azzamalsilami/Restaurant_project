@@ -11,6 +11,8 @@ public class main{
 
     public static void main(String[] args) {
 
+      /******************************Class1 custmer******************************/
+
       Scanner scnr = new Scanner(System.in);
 
       customer cus = new customer();
@@ -23,7 +25,7 @@ public class main{
 
       
       
-      /**********************************************************/
+      /******************************Class2 menu******************************/
       
       menu  menu = new menu();
     
@@ -32,17 +34,25 @@ public class main{
       
       
 
-      /**********************************************************/
+      /******************************Class3 order******************************/
 
 
       order ord = new order();
-      ord.setAndgetTimeOfreserv();
+      ord.setpricesFoodandDrinks();
+
+      System.out.println("Would you like the order is a Take a way or a Local?");
+      ord.setTypeofOrder();
+      ord.getTypeofOrder();
+      
+      
+      
+       
 
 
-      /**********************************************************/
+      /******************************Class4 bill******************************/
       
 
-      bill payBill = new bill();
+      //bill payBill = new bill();
    
 }
 

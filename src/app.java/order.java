@@ -4,6 +4,7 @@ public class order extends menu {
     private int NumOforder;
     private int Price;
     private int persons;
+    private String TypeofOrder; 
     private ArrayList<String> registerOrder = new ArrayList<>();  
     
     
@@ -28,17 +29,30 @@ public class order extends menu {
 
         return NumOforder;
     }
+    int Per;
+    public void setTypeofOrder() {
+      Scanner scnr = new Scanner(System.in);
+      TypeofOrder = scnr.nextLine();
+      if (TypeofOrder.equals("Local")) {
+        System.out.println("How many the persons for the order");
+        persons = scnr.nextInt();
+      }
+      Per = persons;
 
-    public void setpersons(int num) {
-         persons = num;
     }
 
+    public String getTypeofOrder(){
+        return TypeofOrder;
+      
+    }
+
+
     public int getpersons() {
-        return persons;
-   }
+        return Per;
+    }
 
 
-
+    int Total;
     public void setpricesFoodandDrinks(){
         Scanner scnr = new Scanner(System.in);
         int Price = 0;
@@ -108,16 +122,14 @@ public class order extends menu {
         f = scnr.nextLine();
   
   }
-  
+       Total = Price;
   
   }
-
-
-    
-    
-    
-
-
-
+      public void getprice() {
+        
+        System.out.println("The orders " + registerOrder);
+        System.out.println("Total price: " + Total + " SR");
+      }
+  
    
 }
