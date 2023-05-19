@@ -4,7 +4,7 @@
 # Project Description
 
 
-The program is a display of the restaurant menu, and the user chooses from it plus if it is a reservation or not, and it determines the number of people, the time, and the last stage. The invoice is printed with the time date and order information
+The program is a display of the restaurant menu, and the user chooses from it, and it determines the number of people, the time, and the last stage. The invoice is printed with the time date and order information
 
 
 # members of groub
