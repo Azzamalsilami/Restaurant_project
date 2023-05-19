@@ -1,10 +1,10 @@
 import java.util.ArrayList;
-public class menu {
+public class menu extends customer {
  private ArrayList<String> Food = new ArrayList<String>();
  private ArrayList<String> Drinks = new ArrayList<String>(); 
 
 public menu() {
-  
+  super();
 
 }
 

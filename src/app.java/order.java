@@ -36,6 +36,11 @@ public class order extends menu {
       if (TypeofOrder.equals("Local")) {
         System.out.println("How many the persons for the order");
         persons = scnr.nextInt();
+
+      }
+
+      if (!TypeofOrder.equals("Local")) {
+              TypeofOrder = "Take a way";
       }
       Per = persons;
 
