@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 public class main{
 
@@ -24,19 +23,24 @@ public class main{
 
       
       
-      /********************************************************* */
+      /**********************************************************/
       
       menu  menu = new menu();
-      
     
+      menu.printOutput();
       
-      menu.printOut();
+      
       
 
-      /******************************************************* */
+      /**********************************************************/
 
 
       order ord = new order();
+      ord.setAndgetTimeOfreserv();
+
+
+      /**********************************************************/
+      
 
       bill payBill = new bill();
    
