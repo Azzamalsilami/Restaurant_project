@@ -1,3 +1,5 @@
+package src.app;
+import java.util.Scanner;
 public class customer {
 
     private  String Name;
@@ -7,6 +9,8 @@ public class customer {
         Name = "null";
         NumOfcusm = 0555555555;
     }
+
+    Scanner scnr = new Scanner(System.in);
 
     public void setName(String n) {
         
@@ -19,16 +23,19 @@ public class customer {
     }
 
     public String getName() {
+        
         return Name;
     }
 
     public int getNumOfcusm() {
-        System.out.print("0");
+
         return  NumOfcusm;
     }
 
     public void WriteOutput() {
-        System.out.println(getName());
-        System.out.println(getNumOfcusm());
+
+        System.out.println("Name of custmer: " + getName());
+
+        System.out.println("Number phone of coustomer: " + '0' + getNumOfcusm());
     }
 }

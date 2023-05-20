@@ -1,5 +1,8 @@
+package src.app;
 import java.util.Scanner;
-public class main{
+import java.time.format.DateTimeFormatter;  
+import java.time.LocalDateTime;    
+public abstract class Main{
 
 
 
@@ -23,6 +26,8 @@ public class main{
       System.out.println("Number phone of customer");
       cus.setNumOfcusm(scnr.nextInt());
 
+      //cus.WriteOutput();
+
       
       
       /******************************Class2 menu******************************/
@@ -42,17 +47,25 @@ public class main{
 
       System.out.println("Would you like the order is a Take a way or a Local?");
       ord.setTypeofOrder();
-      ord.getTypeofOrder();
+      
       
       
       
        
 
 
-      /******************************Class4 bill******************************/
+      /******************************the bill******************************/
       
 
-      //bill payBill = new bill();
+       
+      
+
+       cus.WriteOutput();
+       ord.WriteOutput();
+
+       DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
+       LocalDateTime now = LocalDateTime.now();  
+       System.out.println(dtf.format(now));  
    
 }
 

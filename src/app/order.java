@@ -1,3 +1,4 @@
+package src.app;
 import java.util.ArrayList;
 import java.util.Scanner;
 public class order extends menu {
@@ -20,7 +21,7 @@ public class order extends menu {
     }
 
     public void setNumOforder(int num){
-       num ++;
+       num ++;                             // I can't make a new order number for another order because we haven't data base
        NumOforder = num;
     }
 
@@ -132,9 +133,16 @@ public class order extends menu {
   }
       public void getprice() {
         
-        System.out.println("The orders " + registerOrder);
+        System.out.println("The orders: " + registerOrder);
         System.out.println("Total price: " + Total + " SR");
       }
+
+      public void WriteOutput() {
+          System.out.println( "Order number: " + getNumOforder());
+          System.out.println("Order type: " + getTypeofOrder());
+          System.out.println("Number of person: " + getpersons());
+          getprice();
+      }   
   
    
 }
