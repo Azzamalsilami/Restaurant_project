@@ -8,17 +8,17 @@ public class bill extends order {
     public void Printbill() {
 
 
-    system.out.println("Name of coustomer");
+    System.out.println("Name of coustomer");
     getName();
-    system.out.println("Number phone of coustomer");
+    System.out.println("Number phone of coustomer");
     getNumOfcusm();
-    system.out.println("Order number");
+    System.out.println("Order number");
     getNumOforder();
-    system.out.println("Order type");
+    System.out.println("Order type");
     getTypeofOrder();
-    system.out.println("Number of person");
+    System.out.println("Number of person");
     getpersons();
-    getpirce();
+    getprice();
 
 
     }
