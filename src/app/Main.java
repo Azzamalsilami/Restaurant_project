@@ -26,15 +26,19 @@ public abstract class Main{
       System.out.println("Number phone of customer");
       cus.setNumOfcusm(scnr.nextInt());
 
-      //cus.WriteOutput();
+      
 
       
       
       /******************************Class2 menu******************************/
       
       menu  menu = new menu();
+
+      menu.setFoodandDrinks();
+      menu.getFoodandDrinks();
+      
     
-      menu.printOutput();
+      
       
       
       
@@ -43,8 +47,8 @@ public abstract class Main{
 
 
       order ord = new order();
-      ord.setpricesFoodandDrinks();
-
+      ord.setTypeofOrder();
+      
       System.out.println("Would you like the order is a Take a way or a Local?");
       ord.setTypeofOrder();
       
@@ -61,11 +65,12 @@ public abstract class Main{
       
 
        cus.WriteOutput();
+       menu.WriteOutput();
        ord.WriteOutput();
 
        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
        LocalDateTime now = LocalDateTime.now();  
-       System.out.println(dtf.format(now));  
+       System.out.println(dtf.format(now)); 
    
 }
 
