@@ -1,6 +1,7 @@
 package src.app;
-import java.util.ArrayList;
+
 import java.util.Scanner;
+
 public class order extends menu {
     private int NumOforder;
     private int Price;
@@ -8,28 +9,24 @@ public class order extends menu {
     private String TypeofOrder; 
       
     
-    
-    
     public order() {
         super();
         NumOforder = 1;
         persons =1;
         Price = 0;
-
-        //TODO Auto-generated constructor stub
+        TypeofOrder = "Take a way";
 
     }
 
     public void setNumOforder(int num){
       
-      num ++;                             
-      NumOforder = num;
+      // Writing to the file Ordernumber
     }
 
     
     public int getNumOforder(){
 
-      
+      // return the number in the file
       return NumOforder;
     }
 
@@ -37,13 +34,13 @@ public class order extends menu {
     public void setTypeofOrder() {
       
       Scanner scnr = new Scanner(System.in);
-      TypeofOrder = scnr.nextLine();
+      TypeofOrder = scnr.nextLine();    // exehand
 
       if (TypeofOrder.equals("Local")) {
 
         System.out.println("How many the persons for the order");
 
-        persons = scnr.nextInt();
+        persons = scnr.nextInt();      // exehand
 
       }
 
@@ -74,7 +71,7 @@ public class order extends menu {
       
 
       public void WriteOutput() {
-
+        super.WriteOutput();
         System.out.println( "Order number: " + getNumOforder());
         System.out.println("Order type: " + getTypeofOrder());
         System.out.println("Number of person: " + getpersons());

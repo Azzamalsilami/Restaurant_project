@@ -1,8 +1,10 @@
 package src.app;
+
 import java.util.Scanner;
 import java.time.format.DateTimeFormatter;  
 import java.time.LocalDateTime;    
-public abstract class Main{
+
+public class Main {
 
 
 
@@ -21,10 +23,10 @@ public abstract class Main{
       customer cus = new customer();
   
       System.out.println("Name of customer");
-      cus.setName(scnr.nextLine());
+      cus.setName(scnr.nextLine());                   // exehand
 
       System.out.println("Number phone of customer");
-      cus.setNumOfcusm(scnr.nextInt());
+      cus.setNumOfcusm(scnr.nextInt());               // exehand
 
       
 
@@ -35,7 +37,7 @@ public abstract class Main{
       menu  menu = new menu();
 
       menu.setFoodandDrinks();
-      menu.getFoodandDrinks();
+      
       
     
       
@@ -47,8 +49,9 @@ public abstract class Main{
 
 
       order ord = new order();
-      ord.setTypeofOrder();
-      
+
+      ord.getFoodandDrinks();  
+    
       System.out.println("Would you like the order is a Take a way or a Local?");
       ord.setTypeofOrder();
       
@@ -58,19 +61,23 @@ public abstract class Main{
        
 
 
-      /******************************the bill******************************/
+      /******************************the file of bill******************************/
       
-
+          
        
       
 
        cus.WriteOutput();
-       menu.WriteOutput();
        ord.WriteOutput();
-
+       
        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
        LocalDateTime now = LocalDateTime.now();  
        System.out.println(dtf.format(now)); 
+
+
+       
+       
+       
    
 }
 

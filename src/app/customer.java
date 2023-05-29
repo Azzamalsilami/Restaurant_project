@@ -1,4 +1,5 @@
 package src.app;
+
 import java.util.Scanner;
 public class customer {
 
@@ -6,7 +7,7 @@ public class customer {
     private int NumOfcusm;
 
     public customer()  {
-        Name = "null";
+        Name = null;
         NumOfcusm = 0555555555;
     }
 

@@ -3,7 +3,7 @@ package src.app;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class menu extends customer {
+public class menu {
 
  private ArrayList<String> Food = new ArrayList<String>();
  private ArrayList<String> Drinks = new ArrayList<String>(); 
@@ -11,7 +11,22 @@ public class menu extends customer {
  private int Total;
 
 public menu() {
+
   
+  for (String element : Food) {
+   element = null;
+  }
+
+  for (String element : Drinks) {
+    element = null;
+   }
+
+   for (String element : registerOrder) {
+    element = null;
+   }
+
+   Total = 0;
+
 
 }
 
@@ -49,7 +64,7 @@ public void setFoodandDrinks() {
         int Price = 0;
   
         System.out.println("Choosing the food and drinks");
-        String f = scnr.nextLine();
+        String f = scnr.nextLine();          // exehand
   
         while (!f.equals("")) {
   
@@ -110,7 +125,7 @@ public void setFoodandDrinks() {
   
         System.out.println("Total price: " + Price + " SR");
         System.out.println(registerOrder);
-        f = scnr.nextLine();
+        f = scnr.nextLine(); // exehand
   
   }
        Total = Price;
@@ -120,8 +135,8 @@ public void setFoodandDrinks() {
   }
 
 
-     public void WriteOutput(){
-
+     public void WriteOutput() {
+      
       System.out.println("The orders: " + registerOrder);
       System.out.println("Total price: " + Total + " SR");
       
@@ -130,12 +145,4 @@ public void setFoodandDrinks() {
 
 
 }
-    
-
-
-
-      
-    
-
-
-    
+   
