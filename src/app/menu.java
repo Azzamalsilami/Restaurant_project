@@ -3,140 +3,125 @@ package src.app;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class menu {
+public class menu  {
 
- private ArrayList<String> Food = new ArrayList<String>();
- private ArrayList<String> Drinks = new ArrayList<String>(); 
- private ArrayList<String> registerOrder = new ArrayList<>();
+
+private ArrayList<String> registerOrder = new ArrayList<>();
+ private String food;
  private int Total;
 
-public menu() {
-
-  
-  for (String element : Food) {
-   element = null;
+ public menu() {
+    
+  for (String element : registerOrder) {
+    element = null;
+  }
+  food = null;
+  Total = 0;
+   
   }
 
-  for (String element : Drinks) {
-    element = null;
-   }
-
-   for (String element : registerOrder) {
-    element = null;
-   }
-
-   Total = 0;
-
-
-}
 
 
 
-public void setFoodandDrinks() {
+/**
+Sets the food and drinks for the restaurant.
+@param f The food and drinks to be set.
+*/
+public void setFoodandDrinks(String f) {
 
-  System.out.println("     ||Food Menu||"+"\n");
+  Scanner scnr = new Scanner(System.in);
 
-  Food.add("Pizza 30 SR");
-  Food.add("Meat Burger 15 SR");
-  Food.add("Chicken Burger 15 SR");
-  Food.add("Spaghetti 20 SR");
-  Food.add("Nuggets 7  SR");
-  Food.add("Steak 25 SR");
-  Food.add("Salad 5  SR");
+  int Price = 0;
+  food = f;
   
-  System.out.println(Food +"\n");
-
-  System.out.println("     ||Drinks Menu||"+"\n");
-
-  Drinks.add("Water 1 SR");
-  Drinks.add("Seven Up 3 SR");
-  Drinks.add("Pepsi 3 SR");
-  Drinks.add("Orange Juice 5 SR");
-
-  System.out.println(Drinks);
+                 
   
-    
-}
-
-    
-    public int getFoodandDrinks(){
-        Scanner scnr = new Scanner(System.in);
-        int Price = 0;
+  while (!food.equals(" ")) {
   
-        System.out.println("Choosing the food and drinks");
-        String f = scnr.nextLine();          // exehand
-  
-        while (!f.equals("")) {
-  
-          if (f.equals("Pizza")) {
+          if (food.equals("Pizza")) {
             Price = Price + 30;
-            registerOrder.add(f);
+            registerOrder.add(food);
           }
   
-          if (f.equals("Meat Burger")) {
+          if (food.equals("Meat Burger")) {
             Price = Price + 15;
-            registerOrder.add(f);
+            registerOrder.add(food);
           }
   
-          if (f.equals("Chicken Burger")) {
+          if (food.equals("Chicken Burger")) {
             Price = Price + 15;
-            registerOrder.add(f);
+            registerOrder.add(food);
           }
   
-          if (f.equals("Spaghetti")) {
+          if (food.equals("Spaghetti")) {
             Price = Price + 20;
-            registerOrder.add(f);
+            registerOrder.add(food);
           }
   
-          if (f.equals("Nuggets")) {
+          if (food.equals("Nuggets")) {
             Price = Price + 7;
-            registerOrder.add(f);
+            registerOrder.add(food);
           }
   
-          if (f.equals("Steak")) {
+          if (food.equals("Steak")) {
             Price = Price + 25;
-            registerOrder.add(f);
+            registerOrder.add(food);
           }
   
-          if (f.equals("Salad")) {
+          if (food.equals("Salad")) {
             Price = Price + 5;
-            registerOrder.add(f);
+            registerOrder.add(food);
           }
   
-          if (f.equals("Water")) {
+          if (food.equals("Water")) {
             Price = Price + 1;
-            registerOrder.add(f);
+            registerOrder.add(food);
           }  
     
-          if (f.equals("Seven")) {
+          if (food.equals("Seven")) {
             Price = Price + 3;
-            registerOrder.add(f);
+            registerOrder.add(food);
           }
     
-          if (f.equals("Pepsi")) {
+          if (food.equals("Pepsi")) {
             Price = Price + 3;
-            registerOrder.add(f);
+            registerOrder.add(food);
           }
     
-          if (f.equals("Orange Juice")) {
+          if (food.equals("Orange Juice")) {
             Price = Price + 5;
-            registerOrder.add(f);
+            registerOrder.add(food);
           }
   
         System.out.println("Total price: " + Price + " SR");
         System.out.println(registerOrder);
-        f = scnr.nextLine(); // exehand
+        System.out.println("Select Space then press enter if you finish!");
+        food = scnr.nextLine(); 
+        Total = Price;
   
   }
-       Total = Price;
-
-       return Price;
-  
-  }
+  Total = Price;
+    
+}
 
 
-     public void WriteOutput() {
-      
+
+/**
+Returns an ArrayList of food and drink items available in the restaurant.
+@return an ArrayList of food and drink items available in the restaurant.
+*/
+public ArrayList<String> getFoodandDrinks(){
+        
+return registerOrder;
+
+}
+
+
+
+/**
+Writes the output of the program to the console.
+*/
+public void WriteOutput() {
       System.out.println("The orders: " + registerOrder);
       System.out.println("Total price: " + Total + " SR");
       
