@@ -8,10 +8,22 @@ public class bill extends order {
     private int Orderconfirmation;
     private int PrintTheBill;
 
-    public bill(int numOforder, String typeofOrder) {
-        super(numOforder, typeofOrder);
-        //TODO Auto-generated constructor stub
+    
+
+public bill() {
+        Orderconfirmation = 0;
+        PrintTheBill = 0;
     }
+
+
+
+public bill(int numOforder, int p, String typeofOrder, int orderconfirmation, int printTheBill) {
+        super(numOforder, p, typeofOrder);
+        Orderconfirmation = orderconfirmation;
+        PrintTheBill = printTheBill;
+    }
+
+
 
 /**
 Sets the value of the Orderconfirmation variable to the specified integer value.

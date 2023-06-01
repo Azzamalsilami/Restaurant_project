@@ -6,6 +6,12 @@ public class customer {
     private int NumOfcusm;
 
     
+    public customer(String name, int numOfcusm) {
+        Name = name;
+        NumOfcusm = numOfcusm;
+    }
+
+
     public customer() {
         Name = null;
         NumOfcusm = 0555555555;

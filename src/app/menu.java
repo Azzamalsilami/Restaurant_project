@@ -10,7 +10,16 @@ private ArrayList<String> registerOrder = new ArrayList<>();
  private String food;
  private int Total;
 
- public menu() {
+ public menu(ArrayList<String> registerOrder, String food, int total) {
+  this.registerOrder = registerOrder;
+  this.food = food;
+  Total = total;
+}
+
+
+
+
+public menu() {
     
   for (String element : registerOrder) {
     element = null;

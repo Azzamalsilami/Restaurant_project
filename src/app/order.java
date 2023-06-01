@@ -13,9 +13,17 @@ public class order  {
 
     
 
-    public order(int numOforder, String typeofOrder) {
+    public order() {
+      NumOforder = 1;
+      this.persons = 1;
+      TypeofOrder = null;
+    }
+
+
+
+    public order(int numOforder,int p, String typeofOrder) {
       NumOforder = numOforder;
-      persons = 1;
+      persons = p;
       TypeofOrder = typeofOrder;
     }
 
@@ -26,13 +34,24 @@ public class order  {
 @throws Exception if an error occurs while reading or writing the file
 */
     public int printNumOforder(){
+      
       try
       {
           File az = new File ("file.txt");
       
+      
+      if (az.createNewFile())
+      {
+          // System.out.println("File created " + az.getName());
+      }
+      else
+      {
+        //  System.out.println("File already exists.");
       }
       
-      catch (Exception e)
+      }
+      
+      catch (IOException e)
       {
           System.out.println("An error occurred.");
           e.printStackTrace();
@@ -42,9 +61,8 @@ public class order  {
       {
      
       FileInputStream fis = new FileInputStream ("file.txt");
-      int num = fis.read();
-       num = num + 1;
-      
+      int num = fis.read(); 
+      num = num + 1;
       
       FileOutputStream fos = new FileOutputStream ("file.txt");
       fos.write((int) num);
@@ -54,7 +72,9 @@ public class order  {
       {
       System.out.println("Eror!");
       }
+
       
+       
        return NumOforder;
     }
 

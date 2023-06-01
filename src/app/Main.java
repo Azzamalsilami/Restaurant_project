@@ -69,7 +69,7 @@ Prompts the user to choose their food and drinks.
       
       //******************************order******************************
 
-      bill ord = new bill(0, null); 
+      bill ord = new bill(0, 0, null, 0, 0); 
 
 /**
 Prints a message to the console asking the user if they want to order a take-away or a local delivery.
