@@ -134,7 +134,7 @@ Prints the order number, order type, and number of persons for the order.
         
         System.out.println("Order number: " + printNumOforder());
         System.out.println("Order type: " + getTypeofOrder());
-        System.out.println("Number of person: " + getpersons());
+        System.out.println("Number of persons: " + getpersons());
           
       }   
   
