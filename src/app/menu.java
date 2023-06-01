@@ -122,7 +122,7 @@ return registerOrder;
 Writes the output of the program to the console.
 */
 public void WriteOutput() {
-      System.out.println("The orders: " + registerOrder);
+      System.out.println("The order: " + registerOrder);
       System.out.println("Total price: " + Total + " SR");
       
       

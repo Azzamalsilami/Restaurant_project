@@ -60,6 +60,6 @@ Writes the output of the program to the console.
     public void WriteOutput() {
 
         System.out.println("Name of custmer: " + getName());
-        System.out.println("Number phone of coustomer: " + '0' + getNumOfcusm());
+        System.out.println("phone Number: " + '0' + getNumOfcusm());
     }
 }
